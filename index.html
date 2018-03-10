@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Tic-Tac-Toe</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="assets/vendor/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/tic-tac-toe.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="col-md-12">
+                    <h1>Tic-Tac-Toe Game</h1>
+                </div>
+            </div>
+        </header>
+
+        <section class="container game-wrapper">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="fields">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+
+                    <button class="btn btn-lg restart">Restart Game</button>
+                </div>
+            </div>
+
+          <!-- Game notifications and popups -->
+            <div class="popups">
+                <div class="overlay hide"></div>
+                <div class="winner hide"></div>
+                <div class="draw hide"></div>
+            </div>
+
+        </section>
+
+        <script type="text/html" id="template-winner">
+            <p>The player <b></b> won!</p>
+            <button class="btn btn-lg play">Play again</button>
+        </script>
+
+        <script type="text/html" id="template-draw">
+            <p>No winner for now =/</p>
+            <button class="btn btn-lg play">Play again</button>
+        </script>
+
+        <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+        <script src="assets/vendor/underscore/underscore-min.js"></script>
+        <script src="assets/vendor/backbone/backbone.js"></script>
+
+        <script src="assets/js/app.js"></script>
+    </body>
+</html>
