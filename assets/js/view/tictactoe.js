@@ -5,7 +5,6 @@ TicTacToe.Game = Backbone.View.extend({
   players: null,
   modals: null,
 
-  // Rename stage
   el: '.game-wrapper',
 
   events: {

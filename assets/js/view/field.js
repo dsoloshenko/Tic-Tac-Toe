@@ -10,7 +10,6 @@ TicTacToe.Field = Backbone.View.extend({
     'click': 'playerMove'
   },
 
-  // What is options ???
   initialize: function (options) {
     this.el = options.el;
     this.game = options.game;

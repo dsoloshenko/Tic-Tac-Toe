@@ -52,7 +52,6 @@ TicTacToe.Fields = Backbone.View.extend({
   nextAvailablePosition: function () {
     var _this = this;
     return _.find(this.map, function (position) {
-      console.log(position);
       return position.isAvailable();
     });
   },
